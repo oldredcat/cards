@@ -42,7 +42,9 @@ $(function(){
 		on: {
 			slideChange: function(){
 				
-				if(mySwiper.activeIndex > 0){
+				if(mySwiper.activeIndex < mySwiper.slides.length -1){
+					return;
+				}else{
 					loadedItem = mySwiper.slides.length;
 				}
 				
