@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&display=swap&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,400i,700,700i&display=swap&subset=cyrillic');
+
+html, body {
+	font-family: 'PT Sans', sans-serif;
+	font-size: 16px;
+	color: #333;
+}
+
+
+#all {
+	padding: 0 10px;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.inline {
+	text-align: center;
+	font-size: 0;
+	line-height: 0;
+	
+	> * {
+		font-size: 14px;
+		line-height: 1.15;
+	}
+}
+
+.outer {
+	margin: 0 -10px;
+}
+
+.section {
+	&-content {
+		position: relative;
+	}
+}
+
+.loading {
+	position: relative;
+	min-height: 300px;
+	
+	&:before {
+		content: '';
+		position: absolute;
+		left: 0;
+		top: 0;
+		height: 100%;
+		width: 100%;
+		z-index: 1000;
+		background: #fff url(../images/loading.gif) center no-repeat;
+	}
+}
+
+h2 {
+	margin: 0;
+	padding: 25px 0;
+	font-weight: normal;
+	text-align: center;
+}
+
+a, a:active {
+	outline: none;
+	text-decoration: none;
+	cursor: pointer;
+	
+	-webkit-transition: all .3s ease-out;
+	-moz-transition: all .3s ease-out;
+	-o-transition: all .3s ease-out;
+	transition: all .3s ease-out;
+}

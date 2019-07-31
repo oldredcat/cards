@@ -1,0 +1,56 @@
+.swiper {
+	
+	&-container {
+		
+		&:before,
+		&:after {
+			content: '';
+			position: absolute;
+			top: 0;
+			height: 100%;
+			width: 7px;
+			background: #fff;
+			z-index: 1000;
+		}
+		
+		&:before {
+			left: 0;
+		}
+		
+		&:after {
+			right: 0;
+		}
+	}
+	
+	&-wrapper {
+		padding: 5px 0;
+	}
+	
+	&-slide {
+		
+		&.item {
+			
+			//width: 20% !important;
+		}
+	}
+	
+	&-button {
+		&-next,
+		&-prev {
+			outline: none;
+		}
+		
+		&-prev {
+			@media (min-width: 1200px) {
+				left: -40px;
+			}
+		}
+		
+		&-next {
+			@media (min-width: 1200px) {
+				right: -40px;
+			}
+		}
+	}
+} 
+
